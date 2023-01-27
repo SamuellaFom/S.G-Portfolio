@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import avant from '../public/avant.png'
+import apres from '../public/apres.png'
+import pendant from '../public/pendant.jpg'
 
 export default function Homepage() {
   return (
@@ -21,7 +23,7 @@ export default function Homepage() {
         </a>
       </div>
       <div>
-        <Image id="logo" src={avant} alt="photo pinterest" />
+        <Image id="logo" src={pendant} alt="photo pinterest" />
       </div>
     </>
   )

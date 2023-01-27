@@ -1,8 +1,6 @@
-// import Headerpage from './components/header'
 import Head from 'next/head'
-// import Link from 'next/link'
 import { HiHome } from 'react-icons/hi'
-import { GrProjects } from 'react-icons/gr'
+import { AiOutlineProject } from 'react-icons/ai'
 import { GiStairsGoal } from 'react-icons/gi'
 import { FaKeyboard } from 'react-icons/fa'
 import { useRef } from 'react'
@@ -75,7 +73,7 @@ export default function homepage() {
             <li className="navbar-item">
               <a onClick={() => scrollToSection(project)} className="navbar-link">
                 <i>
-                  <GrProjects className="navbar-icon" />
+                  <AiOutlineProject className="navbar-icon" />
                 </i>
                 <span className="navbar-title">Projets</span>
               </a>
