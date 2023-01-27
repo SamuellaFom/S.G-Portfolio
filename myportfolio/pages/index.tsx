@@ -84,7 +84,7 @@ export default function homepage() {
                   <ImLinkedin className="navbar-icon"></ImLinkedin>
                 </a>
                 <a href="mailto:samuellafom@gmail.com">
-                <FiMail className="navbar-icon" />
+                  <FiMail className="navbar-icon" />
                 </a>
               </i>
               <span className="navbar-title"></span>

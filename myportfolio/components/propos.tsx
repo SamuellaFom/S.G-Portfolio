@@ -15,12 +15,18 @@ export default function Propospage() {
         'Python',
         'Java',
         'git',
-        'django',
         'Node.js',
-        'OpenCV',
-        'GCP',
-        'MySQL',
-        'jQuery'
+        'Next.JS',
+        'Express JS',
+        'Nest JS',
+        'TypeScript',
+        'PHP',
+        'Python',
+        'Vuetify',
+        'Electron',
+        'Drupal',
+        'Web2Py',
+        'Sinatra'
       ]
 
       TagCloud('.tagcloud', texts, {
@@ -47,7 +53,7 @@ export default function Propospage() {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet" />
       </Head>
       <div>
