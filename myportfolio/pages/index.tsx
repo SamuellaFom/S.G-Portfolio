@@ -33,9 +33,13 @@ export default function homepage() {
     <>
       <Head>
         <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="></meta>
         <title>F.N.S.G - Home</title>
         <meta name="robots" content="noindex,nofollow"></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet" />
       </Head>
       <header>
         <nav className="navbar">

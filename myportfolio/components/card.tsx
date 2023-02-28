@@ -1,7 +1,7 @@
 import Project from '../services'
 import Image from 'next/image'
 
-const Card = ({ title, photo, description, id }: Project) => {
+/*const Card = ({ title, photo, description, id }: Project) => {
   return (
     <div id="container">
       <div className="product-details">
@@ -32,6 +32,24 @@ const Card = ({ title, photo, description, id }: Project) => {
         </div>
       </div>
     </div>
+  )
+}*/
+
+const Card = ({ title, photo, description, id }: Project) => {
+  return (
+    <section className='body_card'>
+      <li className="cards_item">
+        <div className="card">
+          <div className="card_image">
+            <Image width={800} height={800} src={`/${photo}`} alt="photo" />
+          </div>
+          <div className="card_content">
+            <h2 className="card_title">{title}</h2>
+            <p className="card_text">{description}</p>
+          </div>
+        </div>
+      </li>
+    </section>
   )
 }
 export default Card
