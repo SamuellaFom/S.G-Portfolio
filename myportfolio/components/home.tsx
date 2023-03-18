@@ -20,7 +20,7 @@ export default function Homepage() {
           </div>
         </div>
         <div id="logo">
-          <Image src={pendant} alt="photo pinterest" />
+          <Image src={avant} alt="photo pinterest" />
         </div>
 
         <div className="barre"></div>

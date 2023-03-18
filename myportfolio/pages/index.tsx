@@ -3,11 +3,13 @@ import { HiHome } from 'react-icons/hi'
 import { AiOutlineProject } from 'react-icons/ai'
 import { GiStairsGoal } from 'react-icons/gi'
 import { FaKeyboard } from 'react-icons/fa'
+import {GrContactInfo} from 'react-icons/gr'
 import { useRef } from 'react'
 import Homepage from '../components/home'
 import Propospage from '../components/propos'
 import Projectpage from '../components/project'
 import CompetencePage from '../components/competence'
+import Contactpage from '../components/contact'
 import { ImLinkedin } from 'react-icons/im'
 import { FiMail } from 'react-icons/fi'
 
@@ -17,6 +19,7 @@ export default function homepage() {
   const propos = useRef(null)
   const competences = useRef(null)
   const project = useRef(null)
+  const contact = useRef(null)
 
   /**
    * It takes a ref as an argument and scrolls to the top of the element that the ref is attached to
@@ -37,63 +40,65 @@ export default function homepage() {
         <meta name="google-site-verification" content="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="></meta>
         <title>F.N.S.G - Home</title>
         <meta name="robots" content="noindex,nofollow"></meta>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap" rel="stylesheet" />
       </Head>
       <header>
         <nav className="navbar">
-          <ul className="navbar-menu">
-            <li className="nav-logo">
-              <a onClick={() => scrollToSection(home)} className="logo">
-                <h2>F.N.S.G</h2>
-                <h6 className="h6">développeuse web</h6>
-              </a>
-            </li>
-            <li className="navbar-item">
-              <a onClick={() => scrollToSection(home)} className="navbar-link">
-                <i>
-                  <HiHome className="navbar-icon" />
-                </i>
-                <span className="navbar-title">Home</span>
-              </a>
-            </li>
-            <li className="navbar-item">
-              <a onClick={() => scrollToSection(propos)} className="navbar-link">
-                <i>
-                  <GiStairsGoal className="navbar-icon" />
-                </i>
-                <span className="navbar-title">A Propos</span>
-              </a>
-            </li>
-            <li className="navbar-item">
-              <a onClick={() => scrollToSection(competences)} className="navbar-link">
-                <i>
-                  <FaKeyboard className="navbar-icon" />
-                </i>
-                <span className="navbar-title">Competences</span>
-              </a>
-            </li>
-            <li className="navbar-item">
-              <a onClick={() => scrollToSection(project)} className="navbar-link">
-                <i>
-                  <AiOutlineProject className="navbar-icon" />
-                </i>
-                <span className="navbar-title">Projets</span>
-              </a>
-            </li>
-            <li className="navbar-item">
-              <i className="navbar-link">
-                <a href="https://www.linkedin.com/in/samuella-fom-nenkam-a24884257/" target="_blank">
-                  <ImLinkedin className="navbar-icon"></ImLinkedin>
+          <div className="navbar-content content">
+            <input type="checkbox" name="" id="" />
+            <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+            </div>
+            <ul className="navbar-menu">
+              <li className="nav-logo">
+                <a onClick={() => scrollToSection(home)} className="logo">
+                  <h2>F.N.S.G</h2>
+                  <h6 className="h6">développeuse web</h6>
                 </a>
-                <a href="mailto:samuellafom@gmail.com">
-                  <FiMail className="navbar-icon" />
+              </li>
+              <li className="navbar-item">
+                <a onClick={() => scrollToSection(home)} className="navbar-link">
+                  <i>
+                    <HiHome className="navbar-icon" />
+                  </i>
+                  <span className="navbar-title">Home</span>
                 </a>
-              </i>
-              <span className="navbar-title"></span>
-            </li>
-          </ul>
+              </li>
+              <li className="navbar-item">
+                <a onClick={() => scrollToSection(propos)} className="navbar-link">
+                  <i>
+                    <GiStairsGoal className="navbar-icon" />
+                  </i>
+                  <span className="navbar-title">A Propos</span>
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a onClick={() => scrollToSection(competences)} className="navbar-link">
+                  <i>
+                    <FaKeyboard className="navbar-icon" />
+                  </i>
+                  <span className="navbar-title">Competences</span>
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a onClick={() => scrollToSection(project)} className="navbar-link">
+                  <i>
+                    <AiOutlineProject className="navbar-icon" />
+                  </i>
+                  <span className="navbar-title">Projets</span>
+                </a>
+              </li>
+              <li className="navbar-item">
+                <a onClick={() => scrollToSection(contact)} className="navbar-link">
+                  <i>
+                    <GrContactInfo className="navbar-icon" />
+                  </i>
+                  <span className="navbar-title">Contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
@@ -108,6 +113,9 @@ export default function homepage() {
         </section>
         <section ref={project} className="project">
           <Projectpage />
+        </section>
+        <section ref={contact} className="Contact">
+          <Contactpage />
         </section>
       </main>
     </>
